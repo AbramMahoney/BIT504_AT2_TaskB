@@ -72,7 +72,7 @@ public class Tetris extends JPanel {
 	};
 	
 	private final Color[] tetraminoColors = {
-		Color.cyan, Color.blue, Color.orange, Color.yellow, Color.green, Color.pink, Color.red
+		Color.red, Color.pink, Color.red, Color.pink, Color.red, Color.pink, Color.red
 	};
 	
 	private Point pieceOrigin;
@@ -89,9 +89,9 @@ public class Tetris extends JPanel {
 		for (int i = 0; i < 12; i++) {
 			for (int j = 0; j < 23; j++) {
 				if (i == 0 || i == 11 || j == 22) {
-					well[i][j] = Color.GRAY;
+					well[i][j] = Color.WHITE;
 				} else {
-					well[i][j] = Color.BLACK;
+					well[i][j] = Color.PINK;
 				}
 			}
 		}
